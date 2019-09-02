@@ -15,6 +15,7 @@ class EmailAddressParser
         @@all << self
     end
 
+    #regex for the win baby!
     def parse
         @emails.split(/\s|, /).uniq
     end
